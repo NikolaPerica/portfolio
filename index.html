@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Nikola Perica">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal webpage</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<script src="index.js"></script>
+<script src="sendmail.js"></script>
+<script src="server.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#pocetak"><img src="./images/icon1.png" alt="Logo" style="width:40px;"></a>
+  
+      <button class="navbar-toggler navbar-dark navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#work">My work</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <a name="pocetak"/>
+
+<div class="container-fluid justify-content-center align-self-center">
+    
+    <div class="head ">
+            <h1>Web developer</h1>
+    </div>
+</div>
+<div id="about">
+    <h3>About me</h3>
+    <br>
+    <div class="row">
+        <div class="col-md-6">IT student on second year of IT on University 
+            Department of Professional Studies. I posses knowledge of Java, Android app 
+            development. On colledge I'm learning C++, HTML, CSS, JavaScript 
+            and in my free time I'm learning Angular, Bootsrap, React and Node 
+            frameworks
+            
+        </div>
+        <br><br><br>
+        <div class="col-md-1"><br><br></div>
+        <div class="col-md-5">
+            <img src="./images/slika1.jpg" alt="slika" style="width:400px; height: 250px;" class="img-responsive">
+        </div>
+    </div>
+</div>
+<br>
+<div id="work">
+    <h3>My work</h3>
+    <br>
+    <div class="row">
+        <div class="col-md-5">
+            <a href="https://github.com/NikolaPerica" target="_blank" title="myGit"><img src="./images/git1.png" alt="slika" style="width:280px; height: 250px;" class="img-responsive"></a>
+            <br><br>
+        </div><br><br>
+        <div class="col-md-1"><br><br></div>
+        <div class="col-md-6">
+                <br><br>
+            Currently I have finished 2 projects in Java for Android, and
+            soon they will be publisehd on google store. 
+            First app i created was MOvie Finder for searching movies 
+            using rest7 web API. Second app is cryptocurrency value list 
+            using cryptonator web API currently displaying bitcoin 
+            litecoin and ethernum value in USD using Cryptonator API. 
+             Currently working on commercial project for smart house with 
+            remote acces to sensors and remote turning devices. <br>
+            For my projects click GitHub logo.
+            <br><br>
+        </div>
+    </div>
+</div>
+<br>
+<div id="contact">
+        <br>
+    <h3>Contact</h3>
+    <div class="row" method="post" id="mailer">
+        <div class="col-md-6">
+            <form class="was-validated">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" class="form-control" id="subj" placeholder="Enter subject" name="subj" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" rows="5" id="msg" placeholder="Enter message" name="msg" required></textarea> 
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <input type="submit" class="btn btn-info" value="Send"></button>
+            </form>
+    </div>
+    <div class="col-md-1"><br></div>
+    <div class="col-md-5">
+        <img src="./images/slika3.jpg" alt="slika" style="width:70%px; height: 50%;" class="img-responsive">
+    </div>
+    </div>
+</div>
+
+<div class="container-fluid px-0 bg-dark">
+<div class=" row footer bg-dark">
+    <div class="col-md-6 bg-dark">
+        Stranicu izradio<br>
+        &nbsp; &#169; Nikola Perica
+        
+   </div>
+    <div class="col-md-6 bg-dark">
+        Kontakt:
+        <br>
+        Mob: +385 91 92 55 702<br>
+        Email: nikolaperica93@gmail.com<br>
+    </div>
+    <br><br>
+</div>   
+</div>     
+</body>
+</html>
