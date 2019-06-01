@@ -70,10 +70,13 @@ body
   background-color: darkcyan;
     padding-bottom: 5%;
 }
+h1{
+  font-size: 100px;
+}
 @media (min-width: 768px) {
   .head {
     padding-top:15%;
-    background-image: url("./images/head11.jpg");
+    background-image: url("./images/head1.jpg");
     height: 720px;
     color: rgb(100, 90, 219);
     text-align: center;
@@ -90,6 +93,9 @@ body
     color: rgb(100, 90, 219);
     text-align: center;
     width: 100%;
+    font-size: 80px;
+  }
+  h1{
     font-size: 80px;
   }
 }
@@ -202,6 +208,4 @@ body
     padding: 3%;
     padding-right: 0 !important;
   }
-  h1{
-    font-size: 100px;
-  }
+  
