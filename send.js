@@ -3,22 +3,6 @@ const nodemailer = require('nodemailer');
 
 // async..await is not allowed in global scope, must use a wrapper
 async function send(body){
-var sub, msge, eml, nam;
-
-  // Parse URL-encoded bodies (as sent by HTML forms)
-//app.use(express.urlencoded());
-
-// Parse JSON bodies (as sent by API clients)
-//app.use(express.json());
-
-// Access the parse results as request.body
-//app.post('/', function(request, response){
- //   sub = body.subject;
- //   msge = body.message;
- //   eml = body.email;
-  //  nam =body.name;
-    
-//});
 
   
 const mail = {
@@ -50,16 +34,7 @@ console.log(mail)
       rejectUnauthorized: false
     }
   });
-//console.log(sub);
-  
-  // send mail with defined transport object
- // let info = await transporter.sendMail({
- //   from: '"sender" <nperica.send@hotmail.com>', // sender address
- //   to: "nikolaperica93@gmail.com", // list of receivers
- //   subject: sub,
- //   message: body.message + " \n " + `Sent from ${body.email} by ${body.name}` 
-    
-  //});
+
 
   
 
@@ -72,12 +47,6 @@ console.log(mail)
     });
 
 
-  //console.log("Message sent: %s", info.messageId);
-  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-  // Preview only available when sending through an Ethereal account
-  //console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-  // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 }
 
 send().catch(console.error);
