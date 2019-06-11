@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="style.css">
 
 <script src="index.js"></script>
-<script src="sendmail.js"></script>
+<script src="send.js"></script>
 <script src="server.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -106,9 +106,9 @@
 <div id="contact">
         <br>
     <h3>Contact</h3>
-    <div class="row" method="post" id="mailer">
+    <div class="row" >
         <div class="col-md-6">
-            <form class="was-validated">
+            <form class="was-validated" method="post" action="/" id="mailer">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>

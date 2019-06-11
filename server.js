@@ -1,6 +1,6 @@
 const express = require("express")
 const path = require("path")
-const send = require("./sendmail")
+const send = require("./send")
 require('dotenv').config()
 const app = express()
 
@@ -9,7 +9,7 @@ const port = process.env.PORT || 8080
 app.use(express.urlencoded({ extended: true }))
 
 
-app.post("/submit", (req, res) => {
+app.post("/", (req, res) => {
   
   send(req.body)
   res.redirect("/")
