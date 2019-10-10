@@ -1,17 +1,17 @@
 "use strict";
+var nodeoutlook = require('nodejs-nodemailer-outlook')
 const nodemailer = require('nodemailer');
-
 // async..await is not allowed in global scope, must use a wrapper
 async function send(body){
 
   
-const mail = {
+  const mail = {
 
-  from: '"sender" <nperica.send@hotmail.com>', // sender address
-  to: "nikolaperica93@gmail.com", // list of receivers
-  subject: `${body.subj}`,
-  message: `Poruka ${body.msg}` + " \n " + `Sent from ${body.email} by ${body.name}` 
-}
+    from: '"sender" <nperica.send@hotmail.com>', // sender address
+    to: "nikolaperica93@gmail.com", // list of receivers
+    subject: `${body.subj}`,
+    message: `Poruka ${body.msg}` + " \n " + `Sent from ${body.email} by ${body.name}` 
+  }
 
 
 console.log(mail)
@@ -38,16 +38,17 @@ console.log(mail)
 
   
 
-    await transporter.sendMail({
-      from: process.env.USER_MAIL, 
-      to: mail.to,
-      subject: mail.subject, 
-      text: mail.message,
-      html: `<b>${mail.message}</b>` 
-    });
+  await transporter.sendMail({
+    from: process.env.USER_MAIL, 
+    to: mail.to,
+    subject: mail.subject, 
+    text: mail.message,
+    html: `<b>${mail.message}</b>` 
+  });
 
 
 }
+
 
 send().catch(console.error);
 
